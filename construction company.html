@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТРОИТЕЛЬНАЯ КОМПАНИЯ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background: #e2e2e2;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: calc(48% - 10px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>СТРОИТЕЛЬНАЯ КОМПАНИЯ</h1>
+    <nav>
+        <a href="#services">УСЛУГИ</a>
+        <a href="#gallery">КАТАЛОГ</a>
+        <a href="#contact">КОНТАКТЫ</a>
+    </nav>
+</header>
+
+<section id="services">
+    <h2>ПРОЕКТЫ И УСЛУГИ</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Строительство</h3>
+            <p>Мы строим жилые и коммерческие объекты с нуля. Обеспечиваем высокое качество и соблюдение сроков.</p>
+        </div>
+        <div class="service-card">
+            <h3>Ремонт и реконструкция</h3>
+            <p>Проводим капитальный и косметический ремонт. Обновляем интерьеры и экстерьеры зданий.</p>
+        </div>
+        <div class="service-card">
+            <h3>Ландшафтный дизайн</h3>
+            <p>Создаем уникальные ландшафтные проекты, включая озеленение и благоустройство территорий.</p>
+        </div>
+        <div class="service-card">
+            <h3>Проектирование</h3>
+            <p>Разрабатываем архитектурные проекты с учетом всех требований и пожеланий клиентов.</p>
+        </div>
+        <div class="service-card">
+            <h3>Энергосбережение</h3>
+            <p>Внедряем современные технологии для повышения энергоэффективности зданий.</p>
+        </div>
+        <div class="service-card">
+            <h3>Консультации</h3>
+            <p>Предоставляем профессиональные консультации по всем вопросам строительства и ремонта.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Галерея</h2>
+    <img src="image1.jpg" alt="Строительство домов">
+    <img src="image2.jpg" alt="Ремонт квартиры">
+    <img src="image3.jpg" alt="Ландшафтный дизайн">
+    <img src="image4.jpg" alt="Строительство офиса">
+    <img src="image5.jpg" alt="Интерьер квартиры">
+    <img src="image6.jpg" alt="Благоустройство территории">
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (123) 456-78-90</p>
+    <p>Email: kidalova.ru</p>
+    <p>Адрес: г. Тверь</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Строительная Компания</p>
+</footer>
+
+</body>
+</html>
