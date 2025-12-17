@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТРОИТЕЛЬНАЯ КОМПАНИЯ</title>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f6; /* Светлый фон */
+        }
+        header {
+            background: #ff69b4; /* Ярко-розовый фон */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe4e1; /* Светло-розовый при наведении */
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff1493; /* Ярко-розовый цвет заголовков */
+        }
+        p, li {
+            color: #d5006d; /* Темно-розовый цвет текста */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff69b4; /* Ярко-розовый фон внизу */
+            color: #fff;
+        }
+        .services {
+            display: flex; /* Устанавливаем флекс-контейнер */
+            flex-wrap: nowrap; /* Не переносим элементы на новую строку */
+            overflow-x: auto; /* Добавляем горизонтальную прокрутку при необходимости */
+            gap: 20px; /* Промежуток между карточками */
+        }
+        .service-card {
+            background: #ffe4e1; /* Светло-розовый фон карточек */
+            border-radius: 5px;
+            padding: 15px;
+            min-width: 200px; /* Минимальная ширина карточек */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>СТРОИТЕЛЬНАЯ КОМПАНИЯ</h1>
+    <nav>
+        <a href="#services">УСЛУГИ</a>
+        <a href="#materials">МАТЕРИАЛЫ</a>
+        <a href="#gallery">КАТАЛОГ</a>
+        <a href="#contact">КОНТАКТЫ</a>
+        <a href="#about">О НАС</a>
+        <a href="#projects">ПРОЕКТЫ</a>
+        <a href="#employment">ТРУДОУСТРОЙСТВО</a>
+    </nav>
+</header>
+
+<section id="services">
+    <h2>НАШИ УСЛУГИ</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>СТРОИТЕЛЬСТВО</h3>
+            <p>Мы строим жилые и коммерческие объекты с нуля. Обеспечиваем высокое качество и соблюдение сроков.</p>
+        </div>
+        <div class="service-card">
+            <h3>РЕМОНТ</h3>
+            <p>Проводим капитальный и косметический ремонт. Обновляем интерьеры и экстерьеры зданий.</p>
+        </div>
+        <div class="service-card">
+            <h3>ЛАНДШАФТНЫЙ ДИЗАЙН</h3>
+            <p>Создаем уникальные ландшафтные проекты, включая озеленение и благоустройство территорий.</p>
+        </div>
+        <div class="service-card">
+            <h3>ПРОЕКТИРОВАНИЕ</h3>
+            <p>Разрабатываем архитектурные проекты с учетом всех требований и пожеланий клиентов.</p>
+        </div>
+        <div class="service-card">
+            <h3>ЭНЕРГОСБЕРЕЖЕНИЕ</h3>
+            <p>Внедряем современные технологии для повышения энергоэффективности зданий.</p>
+        </div>
+        <div class="service-card">
+            <h3>КОНСУЛЬТАЦИИ</h3>
+            <p>Предоставляем профессиональные консультации по всем вопросам строительства и ремонта.</p>
+        </div>
+    </div>
+</section>
+
+<section id="materials">
+    <h2>МАТЕРИАЛЫ</h2>
+        <p>Мы используем только качественные и надежные материалы для строительства и ремонта:</p>
+    <ul>
+        <li>кирпичи и блоки различных типов</li>
+        <li>бетон и железобетонные конструкции</li>
+        <li>деревянные материалы для каркасного строительства</li>
+        <li>современные изоляционные материалы</li>
+        <li>энергоэффективные окна и двери</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>КАТАЛОГ</h2>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Строительство дома">
+        <img src="image2.jpg" alt="Ремонт квартиры">
+        <img src="image3.jpg" alt="Ландшафтный дизайн">
+        <img src="image4.jpg" alt="Строительство офиса">
+        <img src="image5.jpg" alt="Интерьер квартиры">
+        <img src="image6.jpg" alt="Благоустройство территории">
+    </div>
+</section>
+
+<section id="employment">
+    <h2>ТРУДОУСТРОЙСТВО</h2>
+    <p>Мы всегда ищем талантливых и увлеченных людей, которые хотят стать частью нашей команды. Если вы заинтересованы в работе в строительной компании, ознакомьтесь с нашими текущими вакансиями ниже:</p>
+    <ul>
+        <li><strong>Прораб</strong> - ответственный за управление строительными проектами, контроль за качеством и соблюдение сроков.</li>
+        <li><strong>Продавец-консультант</strong> - работа в зале, с клиентами.</li>
+        <li><strong>Специалист по ландшафтному дизайну</strong> - создание уникальных ландшафтных решений для наших клиентов.</li>
+        <li><strong>Строитель</strong> - выполнение строительных работ, соблюдение стандартов безопасности.</li>
+    </ul>
+    <p>Если вы хотите подать заявку на одну из вакансий, пожалуйста, отправьте свое резюме на наш электронный адрес: <a href="mailto:hr@company.com">hr@company.com</a>.</p>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (123) 456-78-90</p>
+    <p>Email: ridalovo.ru</p>
+    <p>Адрес: г. Тверь</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Строительная Компания.</p>
+</footer>
+
+</body>
+</html>
